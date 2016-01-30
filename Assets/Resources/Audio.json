@@ -1,0 +1,22 @@
+{ 
+	"audio" : [
+		{
+			“fileName” : "test1",
+			“eventNames” : [
+				"testEvent",
+				"testEvent2",
+				"testEvent3"
+			],
+			“loop” : false,
+			“type” : “FX”,
+			“channel” : 1
+		},
+		{
+			“fileName” : "test2",
+			“eventNames” : nameOfEventThatTriggersSound
+			“loop” : true,
+			“type” : “Music”
+			“channel” : 2
+		}
+	]
+}
