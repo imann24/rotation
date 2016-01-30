@@ -20,6 +20,7 @@ public class DoorScript : MonoBehaviour {
         }
         else
         {
+			EventController.Event("puzzlesolve");
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }

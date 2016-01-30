@@ -3,26 +3,90 @@
 		{
 			“FileName”:"jump",
 			“EventNames”:["jump"],
-			“Loop”:false,“Type”:
-			“FX”,“Channel”:1
+			"StopEventNames":[],
+			“Loop”:false,
+			“Type”:“FX”,
+			“Channel”:1
 		},
 		{
 			“FileName”:"jumpland",
 			“EventNames”:["hitGround"],
-			“Loop”:false,“Type”:
-			“FX”,“Channel”:1
+			"StopEventNames":[],
+			“Loop”:false,
+			“Type”:“FX”,
+			“Channel”:1
 		},
 		{
 			“FileName”:"maprotatingloop",
 			“EventNames”:["rotate"],
-			“Loop”:true,“Type”:
-			“FX”,“Channel”:1
+			"StopEventNames":["endRotate"],
+			“Loop”:true,
+			“Type”:“FX”,
+			“Channel”:2
 		},
 		{
 			“FileName”:"maprotationend",
 			“EventNames”:["endRotate"],
-			“Loop”:false,“Type”:
-			“FX”,“Channel”:1
+			"StopEventNames":[],
+			“Loop”:false,
+			“Type”:“FX”,
+			“Channel”:2
+		},
+		{
+			“FileName”:"deathreset",
+			“EventNames”:["death"],
+			"StopEventNames":[],
+			“Loop”:false,
+			“Type”:“FX”,
+			“Channel”:1
+		},
+		{
+			“FileName”:"objectslide",
+			“EventNames”:["slide"],
+			"StopEventNames":[],
+			“Loop”:false,
+			“Type”:“FX”,
+			“Channel”:2
+		},
+		{
+			“FileName”:"puzzlesolve",
+			“EventNames”:["solve"],
+			"StopEventNames":[],
+			“Loop”:false,
+			“Type”:“FX”,
+			“Channel”:2
+		},
+		{
+			“FileName”:"music1",
+			“EventNames”:["music"],
+			"StopEventNames":["stopMusic"],
+			“Loop”:true,
+			“Type”:"Music",
+			“Channel”:3
+		},
+		{
+			“FileName”:"music2",
+			“EventNames”:[],
+			"StopEventNames":[],
+			“Loop”:true,
+			“Type”:"Music",
+			“Channel”:3
+		},
+		{
+			“FileName”:"music3",
+			“EventNames”:[],
+			"StopEventNames":[],
+			“Loop”:true,
+			“Type”:"Music",
+			“Channel”:3
+		},
+		{
+			“FileName”:"music4",
+			“EventNames”:[],
+			"StopEventNames":[],
+			“Loop”:true,
+			“Type”:"Music",
+			“Channel”:3
 		}
 	]
 }

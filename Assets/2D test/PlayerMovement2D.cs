@@ -12,6 +12,7 @@ public class PlayerMovement2D : MonoBehaviour {
 	public bool grounded; 
 	private Transform groundCheck;
 	private bool facingRight = false;
+	bool suppressLandSFX = true;
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
@@ -47,11 +48,20 @@ public class PlayerMovement2D : MonoBehaviour {
 		}
 		if (grounded && jump)
 		{
+
+			// Plays the audio event
+			EventController.Event("jump");
+
 			// Add a vertical force to the player.
 			grounded = false;
 			jump = false;
 			rb2d.AddForce(new Vector2(0f, jumpForce));
 		}
+	}
+
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		EventController.Event("hitGround");
 	}
 
 	void Flip() {

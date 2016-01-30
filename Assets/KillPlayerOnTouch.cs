@@ -10,6 +10,7 @@ public class KillPlayerOnTouch : MonoBehaviour {
         if (coll.gameObject.tag == "Player")
         {
             levelManager.RestartLevel();
+			EventController.Event("death");
         }
 
     }
