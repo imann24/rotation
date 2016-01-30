@@ -17,6 +17,7 @@ public class AudioFile {
 
 	public string FileName;
 	public string[] EventNames;
+	public string[] StopEventNames;
 	public bool Loop;
 	public string Type;
 	public int Channel;
@@ -27,14 +28,30 @@ public class AudioFile {
 			"[AudioFile:\n"+
 			"FileName={0}\n" +
 			"EventNames={1}\n" +
-			"Loop={2}\n" +
-			"Type={3}\n" +
-			"Channel={4}" +
+			"EndEventNames={2}\n" +
+			"Loop={3}\n" +
+			"Type={4}\n" +
+			"Channel={5}" +
 			"]", 
 			FileName, 
-			EventNames, 
+			ArrayUtil.ToString(EventNames),
+			ArrayUtil.ToString(StopEventNames),
 			Loop, 
 			Type, 
 			Channel);
+	}
+
+	public bool HasEvent (string eventName) {
+		return ArrayUtil.Contains (
+			EventNames,
+			eventName
+		);
+	}
+
+	public bool HasEndEvent (string eventName) {
+		return ArrayUtil.Contains (
+			StopEventNames,
+			eventName
+		);
 	}
 }
