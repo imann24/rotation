@@ -79,6 +79,14 @@
 			“Loop”:true,
 			“Type”:"Music",
 			“Channel”:3
+		},
+		{
+			“FileName”:"music4",
+			“EventNames”:[],
+			"StopEventNames":[],
+			“Loop”:true,
+			“Type”:"Music",
+			“Channel”:3
 		}
 	]
 }
