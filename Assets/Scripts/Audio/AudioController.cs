@@ -7,7 +7,11 @@ public class AudioController : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
+	void addSource () {
+
+	}
+
 	// Update is called once per frame
 	void Update () {
 	

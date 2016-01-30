@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EventController : MonoBehaviour {
+public static class EventController {
+	public delegate void NamedEventAction (string nameOfEvent);
+	public static event NamedEventAction OnNamedEvent;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public static void Event (string eventName) {
+		if (OnNamedEvent != null) {
+			OnNamedEvent(eventName);
+		}
 	}
 }
