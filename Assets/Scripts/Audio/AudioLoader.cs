@@ -2,15 +2,15 @@
 using System.Collections;
 
 public class AudioLoader {
-	const string DIRECTORY = "Audio";
+	const string DIRECTORY = "Audio/";
 	string _path;
 
 	public AudioLoader (string path) {
 		this._path = path;
 	}
 
-	public AudioFile Load () {
-		return JsonUtility.FromJson<AudioFile>(
+	public AudioList Load () {
+		return JsonUtility.FromJson<AudioList>(
 			FileUtil.FileText (
 				this._path
 			)
