@@ -7,6 +7,7 @@ public class KillPlayerOnTouch : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Player")
         {
+			EventController.Event("death");
             Destroy(coll.gameObject);
         }
 
