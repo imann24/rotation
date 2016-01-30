@@ -47,11 +47,20 @@ public class PlayerMovement2D : MonoBehaviour {
 		}
 		if (grounded && jump)
 		{
+
+			// Plays the audio event
+			EventController.Event("jump");
+
 			// Add a vertical force to the player.
 			grounded = false;
 			jump = false;
 			rb2d.AddForce(new Vector2(0f, jumpForce));
 		}
+	}
+
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		EventController.Event("hitGround");
 	}
 
 	void Flip() {
