@@ -1,1 +1,28 @@
-{“FileName”:"jump",“EventNames”:["jump"],“Loop”:false,“Type”:“FX”,“Channel”:1}
+{
+	"Audio": [
+		{
+			“FileName”:"jump",
+			“EventNames”:["jump"],
+			“Loop”:false,“Type”:
+			“FX”,“Channel”:1
+		},
+		{
+			“FileName”:"jumpland",
+			“EventNames”:["hitGround"],
+			“Loop”:false,“Type”:
+			“FX”,“Channel”:1
+		},
+		{
+			“FileName”:"maprotatingloop",
+			“EventNames”:["rotate"],
+			“Loop”:true,“Type”:
+			“FX”,“Channel”:1
+		},
+		{
+			“FileName”:"maprotationend",
+			“EventNames”:["endRotate"],
+			“Loop”:false,“Type”:
+			“FX”,“Channel”:1
+		}
+	]
+}

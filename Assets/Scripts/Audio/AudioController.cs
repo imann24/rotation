@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AudioController : MonoBehaviour {
 	const string PATH = "Audio";
-	AudioFile _audioFile;
+	AudioList _files;
 	AudioLoader _loader;
 
 	void Awake () {
@@ -27,7 +27,8 @@ public class AudioController : MonoBehaviour {
 
 	void init () {
 		_loader = new AudioLoader(PATH);
-		_audioFile = _loader.Load();
-		Debug.Log(_audioFile);
+		_files = _loader.Load();
+		Debug.Log(_files[0]);
+		Debug.Log(_files.Length);
 	}
 }

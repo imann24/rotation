@@ -9,8 +9,8 @@ public class AudioLoader {
 		this._path = path;
 	}
 
-	public AudioFile Load () {
-		return JsonUtility.FromJson<AudioFile>(
+	public AudioList Load () {
+		return JsonUtility.FromJson<AudioList>(
 			FileUtil.FileText (
 				this._path
 			)
