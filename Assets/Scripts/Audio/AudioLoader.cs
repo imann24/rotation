@@ -1,15 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AudioLoader : MonoBehaviour {
+public class AudioLoader {
+	const string DIRECTORY = "Audio";
+	string _path;
 
-	// Use this for initialization
-	void Start () {
-	
+	public AudioLoader (string path) {
+		this._path = path;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public AudioFile Load () {
+		return JsonUtility.FromJson<AudioFile>(
+			FileUtil.FileText (
+				this._path
+			)
+		);
 	}
+
+	public AudioClip GetClip (AudioFile file) {
+		return Resources.Load<AudioClip>(
+			DIRECTORY + file.FileName
+		);
+	}
+
 }

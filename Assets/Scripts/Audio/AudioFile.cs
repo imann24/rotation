@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AudioFile : MonoBehaviour {
+[System.Serializable]
+public class AudioFile {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	public string FileName;
+	public string[] EventNames;
+	public bool Loop;
+	public string Type;
+	public int Channel;
+
 }
