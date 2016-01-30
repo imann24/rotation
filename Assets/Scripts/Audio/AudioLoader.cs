@@ -17,10 +17,14 @@ public class AudioLoader {
 		);
 	}
 
-	public AudioClip GetClip (AudioFile file) {
+	public static AudioClip GetClip (string fileName) {
 		return Resources.Load<AudioClip>(
-			DIRECTORY + file.FileName
+			DIRECTORY + fileName
 		);
+	}
+
+	public static AudioClip GetClip (AudioFile file) {
+		return GetClip(file.FileName);
 	}
 
 }
