@@ -83,9 +83,6 @@ public class AudioController : MonoBehaviour {
 
 		initFileDictionary(_fileList);
 
-		Debug.Log(_fileList[0]);
-		Debug.Log(_fileList.Length);
-
 		addAudioEvents();
 	}
 

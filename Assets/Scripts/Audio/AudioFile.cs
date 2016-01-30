@@ -8,7 +8,6 @@ public class AudioFile {
 		get {
 			if (_clip == null) {
 				_clip = AudioLoader.GetClip(FileName);
-				Debug.Log(_clip);
 			}
 
 			return _clip;

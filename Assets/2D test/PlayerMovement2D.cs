@@ -12,6 +12,7 @@ public class PlayerMovement2D : MonoBehaviour {
 	public bool grounded; 
 	private Transform groundCheck;
 	private bool facingRight = false;
+	bool suppressLandSFX = true;
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
