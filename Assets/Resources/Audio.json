@@ -82,7 +82,7 @@
 		},
 		{
 			“FileName”:"music4",
-			“EventNames”:[],
+			“EventNames”:["menuMusic"],
 			"StopEventNames":[],
 			“Loop”:true,
 			“Type”:"Music",
