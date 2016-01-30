@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class AudioLoader {
-	const string DIRECTORY = "Audio";
+	const string DIRECTORY = "Audio/";
 	string _path;
 
 	public AudioLoader (string path) {
