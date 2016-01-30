@@ -19,17 +19,19 @@ public class AudioController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		EventController.Event("jump");
-		EventController.Event("rotate");
-		Invoke("callStopRotate", 2);
-	}
-
-	void callStopRotate () {
-		EventController.Event("endRotate");
+		PlayMusic();
 	}
 
 	void OnDestroy () {
 		unsubscribeEvents();
+	}
+
+	public void PlayMusic () {
+		EventController.Event("music");
+	}
+
+	public void StopMusic () {
+		EventController.Event("stopMusic");
 	}
 
 	public void Play (AudioFile file) {
