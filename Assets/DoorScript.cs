@@ -10,6 +10,7 @@ public class DoorScript : MonoBehaviour {
         gameObject.GetComponent<BoxCollider2D>().enabled = !isDoorOpen;
         gameObject.GetComponent<SpriteRenderer>().enabled = !isDoorOpen;
     }
+		
 
 	public void flipOpenClose()
     {
@@ -20,7 +21,7 @@ public class DoorScript : MonoBehaviour {
         }
         else
         {
-			EventController.Event("puzzlesolve");
+			EventController.Event("solve");
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }

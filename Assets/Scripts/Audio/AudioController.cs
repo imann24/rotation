@@ -162,8 +162,8 @@ public class AudioController : MonoBehaviour {
 	}
 
 	void handleEvent (string eventName) {
-
 		if (_playEvents.ContainsKey(eventName)) {
+
 			playAudioList(
 				_playEvents[eventName]
 			);
