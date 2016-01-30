@@ -78,6 +78,8 @@ public class RotateThingsScript : MonoBehaviour {
 	}
 
 	IEnumerator RotateClockwise(GameObject target){
+		EventController.Event("rotate");
+
 		if(target == null){
 			Debug.LogError("target game object is null");
 			yield return null;
@@ -96,10 +98,14 @@ public class RotateThingsScript : MonoBehaviour {
 		}
 		target.transform.rotation = Quaternion.Euler(new Vector3(0, 0, endRotation));
 		rotating = false;
+
+		EventController.Event("endRotate");
 	}
 
 		
 	IEnumerator RotateCounterClockwise(GameObject target){
+		EventController.Event("rotate");
+
 		if (target == null) {
 			Debug.LogError ("target game object is null");
 			yield return null;
@@ -119,5 +125,7 @@ public class RotateThingsScript : MonoBehaviour {
 
 		target.transform.rotation = Quaternion.Euler (new Vector3 (0, 0, endRotation));
 		rotating = false;
+
+		EventController.Event("endRotate");
 	}
 }
