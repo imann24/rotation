@@ -31,7 +31,6 @@ public class RotateThingsScript : MonoBehaviour {
 					if (!frozen) {
 						if (p_movement.grounded) {
 							p_movement.frozen = true;
-							p_movement.DisableColliders (false);
 							cam.Zoom ();
 						} else {
 							return;
@@ -79,7 +78,6 @@ public class RotateThingsScript : MonoBehaviour {
 		}
 		player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
 		p_movement.frozen = false;
-		p_movement.DisableColliders (true);
 		currentRotation = level.transform.eulerAngles.z;
 	}
 

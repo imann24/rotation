@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+guid: bab603801f43865498f4935479c0f854
+timeCreated: 1454216728
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Base
+    100002: BaseNurb
+    100004: BellyNurb
+    100006: Brow
+    100008: BrowNurb
+    100010: Finger1
+    100012: Finger1 1
+    100014: Finger2
+    100016: Finger2 1
+    100018: Finger3
+    100020: Finger3 1
+    100022: Head
+    100024: HeadNurb
+    100026: joint10
+    100028: joint10 1
+    100030: joint11
+    100032: joint11 1
+    100034: joint12
+    100036: joint12 1
+    100038: joint15
+    100040: L_Arm_Base
+    100042: L_Arm_Hand
+    100044: L_Arm_Joint
+    100046: L_ArmNurb
+    100048: L_Finger1Nurb
+    100050: L_Finger2Nurb
+    100052: L_Finger3Nurb
+    100054: L_HandNurb
+    100056: L_JointNurb
+    100058: LidNurb
+    100060: //RootNode
+    100062: MonsterUVs:polySurface1
+    100064: pCone1
+    100066: pCone2
+    100068: pCone3
+    100070: pConeShape3
+    100072: R_Arm_Base
+    100074: R_Arm_Hand
+    100076: R_Arm_Joint
+    100078: R_ArmNurb
+    100080: R_Finger1Nurb
+    100082: R_Finger2Nurb
+    100084: R_Finger3Nurb
+    100086: R_HandNurb
+    100088: R_JointNurb
+    100090: transform1
+    100092: transform2
+    100094: transform3
+    100096: Tummy
+    400000: Base
+    400002: BaseNurb
+    400004: BellyNurb
+    400006: Brow
+    400008: BrowNurb
+    400010: Finger1
+    400012: Finger1 1
+    400014: Finger2
+    400016: Finger2 1
+    400018: Finger3
+    400020: Finger3 1
+    400022: Head
+    400024: HeadNurb
+    400026: joint10
+    400028: joint10 1
+    400030: joint11
+    400032: joint11 1
+    400034: joint12
+    400036: joint12 1
+    400038: joint15
+    400040: L_Arm_Base
+    400042: L_Arm_Hand
+    400044: L_Arm_Joint
+    400046: L_ArmNurb
+    400048: L_Finger1Nurb
+    400050: L_Finger2Nurb
+    400052: L_Finger3Nurb
+    400054: L_HandNurb
+    400056: L_JointNurb
+    400058: LidNurb
+    400060: //RootNode
+    400062: MonsterUVs:polySurface1
+    400064: pCone1
+    400066: pCone2
+    400068: pCone3
+    400070: pConeShape3
+    400072: R_Arm_Base
+    400074: R_Arm_Hand
+    400076: R_Arm_Joint
+    400078: R_ArmNurb
+    400080: R_Finger1Nurb
+    400082: R_Finger2Nurb
+    400084: R_Finger3Nurb
+    400086: R_HandNurb
+    400088: R_JointNurb
+    400090: transform1
+    400092: transform2
+    400094: transform3
+    400096: Tummy
+    4300000: MonsterUVs:polySurface1
+    4300002: pConeShape3
+    7400000: MonsterIdle
+    9500000: //RootNode
+    13700000: MonsterUVs:polySurface1
+    13700002: pConeShape3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: MonsterIdle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Base
+        weight: 1
+      - path: Base/Tummy
+        weight: 1
+      - path: Base/Tummy/Head
+        weight: 1
+      - path: Base/Tummy/Head/Brow
+        weight: 1
+      - path: Base/Tummy/Head/joint15
+        weight: 1
+      - path: Base/Tummy/Head/L_Arm_Base
+        weight: 1
+      - path: Base/Tummy/Head/L_Arm_Base/L_Arm_Joint
+        weight: 1
+      - path: Base/Tummy/Head/L_Arm_Base/L_Arm_Joint/L_Arm_Hand
+        weight: 1
+      - path: Base/Tummy/Head/L_Arm_Base/L_Arm_Joint/L_Arm_Hand/Finger1
+        weight: 1
+      - path: Base/Tummy/Head/L_Arm_Base/L_Arm_Joint/L_Arm_Hand/Finger1/joint10
+        weight: 1
+      - path: Base/Tummy/Head/L_Arm_Base/L_Arm_Joint/L_Arm_Hand/Finger2
+        weight: 1
+      - path: Base/Tummy/Head/L_Arm_Base/L_Arm_Joint/L_Arm_Hand/Finger2/joint12
+        weight: 1
+      - path: Base/Tummy/Head/L_Arm_Base/L_Arm_Joint/L_Arm_Hand/Finger3
+        weight: 1
+      - path: Base/Tummy/Head/L_Arm_Base/L_Arm_Joint/L_Arm_Hand/Finger3/joint11
+        weight: 1
+      - path: Base/Tummy/Head/R_Arm_Base
+        weight: 1
+      - path: Base/Tummy/Head/R_Arm_Base/R_Arm_Joint
+        weight: 1
+      - path: Base/Tummy/Head/R_Arm_Base/R_Arm_Joint/R_Arm_Hand
+        weight: 1
+      - path: Base/Tummy/Head/R_Arm_Base/R_Arm_Joint/R_Arm_Hand/Finger1 1
+        weight: 1
+      - path: Base/Tummy/Head/R_Arm_Base/R_Arm_Joint/R_Arm_Hand/Finger1 1/joint10
+          1
+        weight: 1
+      - path: Base/Tummy/Head/R_Arm_Base/R_Arm_Joint/R_Arm_Hand/Finger2 1
+        weight: 1
+      - path: Base/Tummy/Head/R_Arm_Base/R_Arm_Joint/R_Arm_Hand/Finger2 1/joint12
+          1
+        weight: 1
+      - path: Base/Tummy/Head/R_Arm_Base/R_Arm_Joint/R_Arm_Hand/Finger3 1
+        weight: 1
+      - path: Base/Tummy/Head/R_Arm_Base/R_Arm_Joint/R_Arm_Hand/Finger3 1/joint11
+          1
+        weight: 1
+      - path: BaseNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/BrowNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/L_ArmNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/L_ArmNurb/L_JointNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/L_ArmNurb/L_JointNurb/L_HandNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/L_ArmNurb/L_JointNurb/L_HandNurb/L_Finger1Nurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/L_ArmNurb/L_JointNurb/L_HandNurb/L_Finger2Nurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/L_ArmNurb/L_JointNurb/L_HandNurb/L_Finger3Nurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/LidNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/R_ArmNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/R_ArmNurb/R_JointNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/R_ArmNurb/R_JointNurb/R_HandNurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/R_ArmNurb/R_JointNurb/R_HandNurb/R_Finger1Nurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/R_ArmNurb/R_JointNurb/R_HandNurb/R_Finger2Nurb
+        weight: 1
+      - path: BaseNurb/BellyNurb/HeadNurb/R_ArmNurb/R_JointNurb/R_HandNurb/R_Finger3Nurb
+        weight: 1
+      - path: MonsterUVs:polySurface1
+        weight: 1
+      - path: pCone1
+        weight: 1
+      - path: pCone1/transform1
+        weight: 1
+      - path: pCone2
+        weight: 1
+      - path: pCone2/transform2
+        weight: 1
+      - path: pCone3
+        weight: 1
+      - path: pCone3/transform3
+        weight: 1
+      - path: pConeShape3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

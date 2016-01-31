@@ -13,7 +13,7 @@ public class PlayerSpawnScript : MonoBehaviour {
             return;
         }
 
-        playerPrefab.transform.position = transform.position;
+		playerPrefab.transform.position = new Vector2(transform.position.x, transform.position.y);
         playerPrefab.transform.rotation = transform.rotation;
     }
 }

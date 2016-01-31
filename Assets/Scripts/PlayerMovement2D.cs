@@ -55,7 +55,7 @@ public class PlayerMovement2D : MonoBehaviour {
 			// Add a vertical force to the player.
 			grounded = false;
 			jump = false;
-			rb2d.AddForce(new Vector2(0f, jumpForce));
+			rb2d.velocity = new Vector2 (rb2d.velocity.x, jumpForce);
 		}
 	}
 
@@ -70,17 +70,5 @@ public class PlayerMovement2D : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale; 
-	}
-
-	public void DisableColliders(bool state){
-		Transform[] children = new Transform[transform.childCount];
-		for (int i = 0; i < transform.childCount; i++){
-			children[i] = transform.GetChild(i);
-		}
-		foreach(Transform child in children){
-			if (child.name != "GroundCheck") {
-				child.gameObject.GetComponent<BoxCollider2D> ().enabled = state;
-			}
-		}
 	}
 }
