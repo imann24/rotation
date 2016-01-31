@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class AudioController : MonoBehaviour {
+	static AudioController _instance;
+
 	const string PATH = "Audio";
 	AudioList _fileList;
 	AudioLoader _loader;
@@ -14,16 +16,23 @@ public class AudioController : MonoBehaviour {
 	Dictionary<string, List<AudioFile>> _stopEvents = new Dictionary<string, List<AudioFile>>();
 	void Awake () {
 		init();
-		subscribeEvents();
 	}
 
 	// Use this for initialization
 	void Start () {
-		PlayMusic();
+
 	}
 
 	void OnDestroy () {
 		unsubscribeEvents();
+	}
+
+	void OnLevelWasLoaded (int level) {
+		if (SceneUtil.IsMainMenu()) { 
+			EventController.Event("menuMusic");
+		} else {
+			EventController.Event("music");
+		}
 	}
 
 	public void PlayMusic () {
@@ -33,7 +42,7 @@ public class AudioController : MonoBehaviour {
 	public void StopMusic () {
 		EventController.Event("stopMusic");
 	}
-
+		
 	public void Play (AudioFile file) {
 		AudioSource source = getChannel(file.Channel);
 
@@ -78,12 +87,19 @@ public class AudioController : MonoBehaviour {
 
 
 	void init () {
-		_loader = new AudioLoader(PATH);
-		_fileList = _loader.Load();
 
-		initFileDictionary(_fileList);
+		if (SingletonUtil.TryInit(ref _instance, this, gameObject)) {
+				
+			_loader = new AudioLoader(PATH);
+			_fileList = _loader.Load();
 
-		addAudioEvents();
+			initFileDictionary(_fileList);
+
+			addAudioEvents();
+
+			subscribeEvents();
+
+		}
 	}
 
 	void initFileDictionary (AudioList audioFiles) {
