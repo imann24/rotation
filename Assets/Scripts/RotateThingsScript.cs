@@ -25,7 +25,7 @@ public class RotateThingsScript : MonoBehaviour {
 
 	void FixedUpdate(){
 		
-		if (Input.GetKeyDown(KeyCode.F)){
+		if (Input.GetKey(KeyCode.F)){
 			if (!cam.zooming) {
 				if (!rotating) {
 					if (!frozen) {
@@ -45,13 +45,13 @@ public class RotateThingsScript : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetKeyDown (KeyCode.Q)) {
+		if (Input.GetKey (KeyCode.Q)) {
 			if (frozen) {
 				if (!rotating) {
 					StartCoroutine ("RotateCounterClockwise", level);
 				}
 			}
-		}if (Input.GetKeyDown (KeyCode.E)) {
+		}if (Input.GetKey (KeyCode.E)) {
 			if (frozen) {
 				if (!rotating) {
 					StartCoroutine ("RotateClockwise", level);

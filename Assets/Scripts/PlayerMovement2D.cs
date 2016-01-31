@@ -22,14 +22,14 @@ public class PlayerMovement2D : MonoBehaviour {
 
 	void FixedUpdate(){
 		if (frozen) {
-			rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
+			rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
 			//return here to not flip
 		} else {
 			rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
 		}
 
 		float h = Input.GetAxis ("Horizontal");
-		bool jump = Input.GetKeyDown (KeyCode.Space);
+		bool jump = Input.GetKey (KeyCode.Space);
 
 		if (Physics2D.OverlapCircle (groundCheck.position, groundedRadius, whatIsGround)) {
 			grounded = true;
