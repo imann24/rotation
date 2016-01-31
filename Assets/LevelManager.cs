@@ -15,4 +15,12 @@ public class LevelManager : MonoBehaviour {
     {
         Start();
     }
+
+    void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.R))
+        {
+            RestartLevel();
+        }
+    }
 }
