@@ -7,6 +7,7 @@ public class RotateThingsScript : MonoBehaviour {
 
 	public float rotateSpeed = 90f;
 	private PlayerMovement2D p_movement;
+	private FollowPlayerCam cam;
 
 	private bool rotating = false;
 	private float currentRotation = 0f;
@@ -14,6 +15,7 @@ public class RotateThingsScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		p_movement = player.GetComponent<PlayerMovement2D> ();
+		cam = Camera.main.GetComponent<FollowPlayerCam> ();
 	}
 	
 	// Update is called once per frame
@@ -24,19 +26,23 @@ public class RotateThingsScript : MonoBehaviour {
 	void FixedUpdate(){
 		
 		if (Input.GetKeyDown(KeyCode.F)){
-			if (!rotating) {
-				if (!frozen) {
-					if (p_movement.grounded) {
-						p_movement.frozen = true;
-						p_movement.DisableColliders (false);
-					} else {
-						return;
+			if (!cam.zooming) {
+				if (!rotating) {
+					if (!frozen) {
+						if (p_movement.grounded) {
+							p_movement.frozen = true;
+							p_movement.DisableColliders (false);
+							cam.Zoom ();
+						} else {
+							return;
+						}
 					}
+					if (frozen) {
+						cam.Zoom ();
+						StartCoroutine ("RotatePlayer");
+					}
+					frozen = !frozen;
 				}
-				if (frozen){
-					StartCoroutine ("RotatePlayer");
-				}
-				frozen = !frozen;
 			}
 		}
 
@@ -66,7 +72,7 @@ public class RotateThingsScript : MonoBehaviour {
 		float rotationDoneSoFar = 0.0f;
 
 		while (rotationDoneSoFar <= amountToRotate){
-			float rotateBy = Time.deltaTime * rotateSpeed;
+			float rotateBy = Time.deltaTime * (rotateSpeed * 2f);
 			player.transform.Rotate(Vector3.forward, rotateBy * dir);
 			rotationDoneSoFar += rotateBy;
 			yield return null;
