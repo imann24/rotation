@@ -23,4 +23,11 @@ public static class SceneUtil {
 
 		}
 	}
+
+	public static void LoadMainMenu () { 
+		SceneManager.LoadScene (
+			_mainMenu
+		);
+	}
+
 }
