@@ -6,7 +6,7 @@ using System.Collections;
 public class MainMenuController : MonoBehaviour {
 	public Text LevelName;
 
-	int _levelToLoad;
+	int _levelToLoad = 1;
 
 	string [] _levelNames = {
 		"Main Menu",
