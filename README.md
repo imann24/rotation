@@ -4,8 +4,13 @@
 CREDITS
 
 Joel Esquilin - Programmer/2D Artist
+
 Tim Ng - Programmer
+
 Olivia Vazquez - Audio Designer
+
 Michael Barrow - 3D Artist
+
 Grace Barrett-Snyder - Programmer/Creator
+
 Isaiah Mann - Programmer
