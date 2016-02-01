@@ -58,6 +58,14 @@
 		},
 		{
 			“FileName”:"music1",
+			“EventNames”:[],
+			"StopEventNames":[],
+			“Loop”:true,
+			“Type”:"Music",
+			“Channel”:3
+		},
+		{
+			“FileName”:"music2",
 			“EventNames”:["music"],
 			"StopEventNames":["stopMusic"],
 			“Loop”:true,
@@ -65,17 +73,9 @@
 			“Channel”:3
 		},
 		{
-			“FileName”:"music2",
-			“EventNames”:[],
-			"StopEventNames":[],
-			“Loop”:true,
-			“Type”:"Music",
-			“Channel”:3
-		},
-		{
 			“FileName”:"music3",
-			“EventNames”:[],
-			"StopEventNames":[],
+			“EventNames”:["hardMusic"],
+			"StopEventNames":["stopMusic"],
 			“Loop”:true,
 			“Type”:"Music",
 			“Channel”:3

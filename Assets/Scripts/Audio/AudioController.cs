@@ -9,6 +9,7 @@ public class AudioController : MonoBehaviour {
 	AudioList _fileList;
 	AudioLoader _loader;
 
+	int _hardLevel = 4;
 	Dictionary<int, AudioSource> _channels = new Dictionary<int, AudioSource>();
 	Dictionary<string, AudioFile> _files = new Dictionary<string, AudioFile>();
 
@@ -30,8 +31,10 @@ public class AudioController : MonoBehaviour {
 	void OnLevelWasLoaded (int level) {
 		if (SceneUtil.IsMainMenu()) { 
 			EventController.Event("menuMusic");
-		} else {
+		} else if (level < _hardLevel) {
 			EventController.Event("music");
+		} else {
+			EventController.Event("hardMusic");
 		}
 	}
 
