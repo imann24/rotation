@@ -11,6 +11,6 @@ Olivia Vazquez - Audio Designer
 
 Michael Barrow - 3D Artist
 
-Grace Barrett-Snyder - Programmer/Creator
+Grace Barrett-Snyder - Programmer/Creator/2D Artist
 
 Isaiah Mann - Programmer
